@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!-- Pohjoismaa kirjaimisto käyttöön sekä selaimessa näkyvä nimi -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaKerho ry | Mediataitojen opetusta Joensuussa</title>
+    <meta name="description"
+          content="MediaKerho ry tarjoaa mediataitojen opetusta Joensuussa. Valokuvaus, video, podcastit ja graafinen suunnittelu työpajoissa opiskelijoille ja harrastajille.">
+    <meta property="og:title" content="MediaKerho ry | Mediataitojen opetusta Joensuussa">
+    <meta property="og:description" content="Valokuvaus, video, podcastit ja graafinen suunnittelu Joensuussa. Tule mukaan MediaKerho ry:n toimintaan!">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fi_FI">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MediaKerho ry",
+      "url": "https://www.mediakerho.fi",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Joensuu",
+        "addressCountry": "FI"
+      }
+    }
+	</script>
+  </head>
+  
+  <!-- Sivun luominen -->
+  <body>
+    <header>
+      <h1>MediaKerho ry - Mediataitojen Opetusta Joensuussa</h1>
+      <p>Luovuutta ja mediataitoja yhdessä oppien</p>
+      <!-- navigaatio -->
+      <a href="#tietoa" class="skip-link">Siirry sisältöön</a>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="navi"></div>
+    </header>
+    
+    <main>
+      <!-- osioidaan tietoihin -->
+      <section id="tietoa">
+        <h2>Tietoa media-alan kerhosta</h2>
+        <p>
+          MediaKerho ry yhdistää kaikki, joita kiinnostaa valokuvaus, video, graafinen suunnittelu ja verkkosisällöt.
+          Olemme aktiivinen media-alan kerho, joka järjestää työpajoja ja tapahtumia opiskelijoille ja harrastajille.
+          Tavoitteemme on kehittää jäsentemme luovia taitoja ja tukea yhdessä oppimista.
+        </p>
+      </section>
+
+      <!-- osioidaan omiin artikkeleihin -->
+      <section id="ajankohtaista">
+        <h2>Ajankohtaista</h2>
+        <article>
+          <h3>Kevään podcast-työpaja</h3>
+          <p>
+            Keväällä järjestämme työpajan, jossa opetellaan podcastin suunnittelua, äänitystä ja editointia.
+            Työpaja on avoin kaikille kerhon jäsenille.
+          </p>
+        </article>
+
+        <article>
+          <h3>Valokuvanäyttely Joensuussa</h3>
+          <p>
+            Kesällä avaamme valokuvanäyttelyn Joensuun kulttuuritalolla.
+            Näyttelyssä on esillä kerholaisten omia töitä, ja tapahtuma on maksuton.
+          </p>
+        </article>
+      </section>
+   	</main>
+    
+    <!-- alasivu -->
+  	<div id="footer"></div>
+    
+    <!-- scriptit -->
+    <script src="nav.js" defer></script>
+    <script src="footer.js" defer></script>
+    <script>
+      const hamburger = document.getElementById('hamburger-menu');
+      
+      hamburger.addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!-- Pohjoismaa kirjaimisto käyttöön sekä selaimessa näkyvä nimi -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaKerho ry - Yhteystiedot</title>
+    <meta name="description"
+          content="Esitellään nykyiset puheenjohtajat ja varapuheenjohtajat, joihin voi ottaa yhteyttä.
+                   Esitetään ryhmän sosiaaliset mediat, joissa voi seurata tulevia tapahtumia ja opetuksia.
+                   Kerrotaan, missä sijaitsee, joka on Joensuu">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>MediaKerho ry - Mediataitojen Opetusta Joensuussa</h1>
+      <p>Luovuutta ja mediataitoja yhdessä oppien</p>
+      <!-- navigaatio -->
+      <a href="#yhteystiedot" class="skip-link">Siirry sisältöön</a>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="navi"></div>
+    </header>
+
+    <main>
+      <!-- Yhteystiedot-osio -->
+      <section id="yhteystiedot">
+        <h2>Mediaopetuksen yhteystiedot</h2>
+        <p>
+          Ota rohkeasti yhteyttä, jos haluat lisätietoa toiminnastamme, liittyä jäseneksi tai ehdottaa yhteistyötä!
+          MediaKerho ry edistää mediaopetusta Joensuussa ja tarjoaa monipuolisia mahdollisuuksia media-alasta kiinnostuneille.
+        </p>
+
+        <article>
+          <h3>Yleinen yhteydenotto</h3>
+          <p><strong>Sähköposti:</strong> info@mediakerho.fi</p>
+          <p><strong>Puhelin:</strong> 040 123 4567</p>
+        </article>
+
+        <article>
+          <h3>Hallitus 2025</h3>
+          <p><strong>Puheenjohtaja:</strong> Emma Virtanen<br>
+             emma.virtanen@mediakerho.fi</p>
+
+          <p><strong>Varapuheenjohtaja:</strong> Oskari Nieminen<br>
+             oskari.nieminen@mediakerho.fi</p>
+
+          <p><strong>Sihteeri:</strong> Aino Lahtinen<br>
+             aino.lahtinen@mediakerho.fi</p>
+
+          <p><strong>Rahastonhoitaja:</strong> Leo Mäkinen<br>
+             leo.makinen@mediakerho.fi</p>
+        </article>
+
+        <article>
+          <h3>Osoite</h3>
+          <p>
+            MediaKerho ry<br>
+            Kauppakatu 10<br>
+            80100 Joensuu
+          </p>
+          <!-- Google Maps -upotus -->
+          <iframe
+                  title="MediaKerho ry:n sijainti Joensuussa"
+                  src="https://www.google.com/maps?q=Kauppakatu+10+Joensuu&output=embed"
+                  width="100%"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </article>
+
+        <article>
+          <h3>Seuraa meitä</h3>
+          <p>
+            Instagram: @mediakerho<br>
+            Facebook: MediaKerho ry<br>
+            YouTube: MediaKerho Joensuu
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- alasivu -->
+  	<div id="footer"></div>
+    
+    <!-- scriptit -->
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script>
+      const hamburger = document.getElementById('hamburger-menu');
+      
+      hamburger.addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

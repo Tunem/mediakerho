@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietoa MediaKerho ry:stä | Mediataitojen opetusta Joensuussa</title>
+    <meta name="description"
+          content="MediaKerho ry on Joensuussa toimiva yhdistys, joka tarjoaa mediataitojen opetusta ja työpajoja valokuvauksesta videoon ja graafiseen suunnitteluun.
+                   Tutustu toimintaamme ja liity mukaan!">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MediaKerho ry",
+      "url": "https://www.mediakerho.fi",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Joensuu",
+        "addressCountry": "FI"
+      }
+    }
+	</script>
+  </head>
+  
+  <body>
+    <header>
+      <h1>MediaKerho ry - Mediataitojen Opetusta Joensuussa</h1>
+      <p>Luovuutta ja mediataitoja yhdessä oppien</p>
+      <!-- navigaatio -->
+      <a href="#tietoa" class="skip-link">Siirry sisältöön</a>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="navi"></div>
+    </header>
+    
+    <main>
+      <!-- osio tietoa kerhosta -->
+      <section id="tietoa">
+        <h2>MediaKerho ry Joensuussa</h2>
+
+        <h3>Mitä mediataitoja opetamme?</h3>
+        <p>
+          MediaKerho ry on Joensuussa toimiva yhdistys, joka tarjoaa kaikille media-alasta kiinnostuneille mahdollisuuden mediataitojen kehittämiseen ja kokemusten jakamiseen.
+          Yhdistyksemme toiminnan ytimessä on mediataitojen kehittäminen käytännön tekemisen kautta.
+          Kerhossa keskitytään erityisesti valokuvaukseen, videotuotantoon, graafiseen suunnitteluun ja verkkosisältöjen luomiseen.
+        </p>
+
+        <h3>Työpajat ja yhteistyö</h3>
+        <p>
+          Toimintamme perustuu yhdessä oppimiseen ja luovan ilmaisun tukemiseen.
+          Järjestämme säännöllisesti työpajoja, kursseja ja retkiä, joissa jäsenet voivat kokeilla uusia tekniikoita ja työkaluja.
+          Näiden kautta mediataitojen kehittäminen tapahtuu innostavassa ja kannustavassa ympäristössä.
+          Yhteistyö paikallisten yritysten ja oppilaitosten kanssa tarjoaa käytännön kokemusta ja verkostoitumismahdollisuuksia, jotka tukevat mediataitojen kehittämistä entisestään.
+        </p>
+
+        <h3>Kenelle toiminta sopii?</h3>
+        <p>
+          MediaKerho ry on avoin kaikille iästä tai taustasta riippumatta.
+          Tavoitteenamme on luoda yhteisö, jossa mediataitojen kehittäminen on hauskaa, tavoitteellista ja yhteisöllistä.
+          Jokainen jäsen voi kehittää omia mediaosaamisiaan ja inspiroitua muiden projekteista.
+        </p>
+
+        <h3>Liity jäseneksi</h3>
+        <p>
+          Liity jäseneksi ja tule mukaan työpajoihin, kerhoiltoihin ja tapahtumiin – yhdessä teemme mediataitojen kehittämisestä luovaa, opettavaista ja innostavaa!
+        </p>
+      </section>
+    </main>
+    
+    <!-- alasivu -->
+  	<div id="footer"></div>
+    
+    <!-- scriptit -->
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script>
+      const hamburger = document.getElementById('hamburger-menu');
+      
+      hamburger.addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!-- Pohjoismaa kirjaimisto käyttöön sekä selaimessa näkyvä nimi -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteystiedot – MediaKerho ry</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>MediaKerho ry</h1>
+      <p>Luovuutta ja mediataitoja yhdessä oppien</p>
+      
+      <!-- navigaatio desktop -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="tietoa.html">Tietoa</a></li>
+          <li><a href="ajankohtaista.html">Ajankohtaista</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+
+      <!-- navigaatio mobile -->
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-navigation">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="tietoa.html">Tietoa</a></li>
+        <li><a href="ajankohtaista.html">Ajankohtaista</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </div>
+
+    <!-- Yhteystiedot-osio -->
+    <section id="yhteystiedot">
+      <h2>Yhteystiedot</h2>
+      <p>
+        Ota rohkeasti yhteyttä, jos haluat lisätietoa toiminnastamme,
+        liittyä jäseneksi tai ehdottaa yhteistyötä!
+      </p>
+
+      <article>
+        <h3>Yleinen yhteydenotto</h3>
+        <p><strong>Sähköposti:</strong> info@mediakerho.fi</p>
+        <p><strong>Puhelin:</strong> 040 123 4567</p>
+      </article>
+
+      <article>
+        <h3>Osoite</h3>
+        <p>
+          MediaKerho ry<br>
+          Kauppakatu 10<br>
+          80100 Joensuu
+        </p>
+
+        <!-- Google Maps -upotus -->
+        <iframe
+          src="https://www.google.com/maps?q=Kauppakatu+10+Joensuu&output=embed"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </article>
+
+      <article>
+        <h3>Seuraa meitä</h3>
+        <p>
+          Instagram: @mediakerho<br>
+          Facebook: MediaKerho ry<br>
+          YouTube: MediaKerho Joensuu
+        </p>
+      </article>
+    </section>
+
+    <script>
+      const hamburger = document.getElementById('hamburger-menu');
+      const mobileNav = document.getElementById('mobile-navigation');
+      hamburger.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+      });
+    </script>
+
+    <footer>
+      <p>Yhteystiedot: info@mediakerho.fi · Joensuu</p>
+      <p>© 2025 MediaKerho ry</p>
+    </footer>
+  </body>
+</html>

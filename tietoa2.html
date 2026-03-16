@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaKerho ry – Tietoa</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>MediaKerho ry</h1>
+      <p>Luovuutta ja mediataitoja yhdessä oppien</p>
+      <!-- navigaatio desktop -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="tietoa2.html">Tietoa</a></li>
+          <li><a href="#ajankohtaista">Ajankohtaista</a></li>
+          <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+      <!-- navigaatio mobile -->
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <div class="mobile-nav" id="mobile-navigation">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="tietoa.html">Tietoa</a></li>
+        <li><a href="#ajankohtaista">Ajankohtaista</a></li>
+        <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+      </ul>
+    </div>
+    
+    <!-- osio tietoa kerhosta -->
+    <section id="tietoa">
+      <h2>Tietoa MediaKerho ry:stä</h2>
+      <p>
+        MediaKerho ry on Joensuussa toimiva yhdistys, joka yhdistää media-alasta kiinnostuneet harrastajat ja opiskelijat. 
+        Kerhossa keskitymme valokuvaukseen, videotuotantoon, graafiseen suunnitteluun ja verkkosisältöjen luomiseen. 
+        Toimintamme perustuu yhdessä oppimiseen, uusien taitojen harjoitteluun ja luovan ilmaisun tukemiseen.
+      </p>
+      <p>
+        Yhdistys tarjoaa jäsenilleen säännöllisiä työpajoja, luentoja ja retkiä, joissa pääsee kokeilemaan uusia media-alan tekniikoita. 
+        Lisäksi järjestämme yhteistyössä paikallisten yritysten ja oppilaitosten kanssa erilaisia projekteja, 
+        jotka tuovat käytännön kokemusta ja verkostoitumismahdollisuuksia.
+      </p>
+      <p>
+        MediaKerho ry on avoin kaikille iästä tai taustasta riippumatta. 
+        Tavoitteemme on luoda kannustava ja innostava yhteisö, jossa jokainen voi kehittää omia mediaosaamisiaan ja inspiroitua muiden projekteista.
+      </p>
+    </section>
+
+    <!-- osio ajankohtaista -->
+    <section id="ajankohtaista">
+      <h2>Ajankohtaista</h2>
+      <article>
+        <h3>Kevään mediakurssit</h3>
+        <p>
+          Tänä keväänä järjestämme useita kursseja, joissa opetellaan esimerkiksi videoeditointia, graafista suunnittelua ja sosiaalisen median sisältöjen luomista.
+        </p>
+      </article>
+      
+      <article>
+        <h3>Kerhoilta jäsenille</h3>
+        <p>
+          Kuukauden viimeisenä perjantaina kokoontuu kerhoilta, jossa jäsenet voivat esitellä projektejaan ja saada palautetta muilta. 
+          Tilaisuus on myös loistava mahdollisuus verkostoitua muiden median harrastajien kanssa.
+        </p>
+      </article>
+    </section>
+    
+    <script>
+      const hamburger = document.getElementById('hamburger-menu');
+      const mobileNav = document.getElementById('mobile-navigation');
+      hamburger.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+      });
+    </script>
+    
+    <!-- yhteystiedot -->
+    <footer id="yhteystiedot">
+      <p>Yhteystiedot: info@mediakerho.fi · Joensuu</p>
+      <p>© 2025 MediaKerho ry</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!-- Pohjoismaa kirjaimisto käyttöön sekä selaimessa näkyvä nimi -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajankohtaiset tapahtumat Joensuussa | MediaKerho ry</title>
+    <meta name="description" content="MediaKerho ry:n ajankohtaiset tapahtumat Joensuussa: videotyöpaja, some-ilta, kevätkokous ja valokuvaretki Kolille.
+                                      Tutustu ja ilmoittaudu mukaan!">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Talven videotyöpaja",
+      "startDate": "2025-03-05T17:00",
+      "endDate": "2025-03-05T20:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Carelia-sali",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Joensuu",
+          "addressCountry": "FI"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "MediaKerho ry"
+      }
+    }
+	</script>
+  </head>
+  
+  <!-- Sivun luominen -->
+  <body>
+    <header>
+      <h1>MediaKerho ry - Mediataitojen Opetusta Joensuussa</h1>
+      <p>Luovuutta ja mediataitoja yhdessä oppien</p>
+      <!-- navigaatio -->
+      <a href="#ajankohtaista" class="skip-link">Siirry sisältöön</a>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="navi"></div>
+    </header>
+
+    <main>
+      <!-- Ajankohtaiset tapahtumat -->
+      <section id="ajankohtaista">
+        <h2>Ajankohtaiset tapahtumat ja mediaprojektit opiskelijoille Joensuussa</h2>
+
+        <article>
+          <h3>Talven videotyöpaja – <time datetime="2025-03-05">5.3.2025</time></h3>
+          <p>
+            Järjestämme maaliskuussa videotyöpajan, jossa perehdytään videokuvauksen perusteisiin,
+            valaistukseen sekä editointiin. Työpaja sopii sekä aloittelijoille että jo hieman
+            kokemusta omaaville. Ota mukaan oma kamera tai puhelin.
+          </p>
+          <p><strong>Paikka:</strong> Carelia-sali, Joensuu<br>
+             <strong>Aika:</strong> 5.3.2025 klo 17–20</p>
+        </article>
+
+        <article>
+          <h3>Sosiaalisen median sisältöilta – <time datetime="2025-03-20">20.3.2025</time></h3>
+          <p>
+            Miten luoda kiinnostavaa sisältöä Instagramiin ja TikTokiin?
+            Illan aikana käymme läpi ideointia, kuvankäsittelyä ja julkaisusuunnittelua.
+            Tapahtuma on avoin kaikille jäsenille ja uusille kiinnostuneille.
+          </p>
+          <p><strong>Paikka:</strong> MediaKerhon kerhotila<br>
+             <strong>Aika:</strong> 20.3.2025 klo 18–20</p>
+        </article>
+
+        <article>
+          <h3>Kevätkokous – <time datetime="2025-4-10">10.4.2025</time></h3>
+          <p>
+            MediaKerho ry:n sääntömääräinen kevätkokous pidetään huhtikuussa.
+            Kokouksessa käsitellään toimintakertomus, talousasiat sekä suunnitellaan
+            tulevan kesän tapahtumia. Kaikki jäsenet ovat tervetulleita osallistumaan.
+          </p>
+          <p><strong>Paikka:</strong> Joensuun kirjasto, kokoushuone 2<br>
+             <strong>Aika:</strong> 10.4.2025 klo 17.30</p>
+        </article>
+
+        <article>
+          <h3>Valokuvaretki Kolille – <time datetime="2025-5-18">18.5.2025</time></h3>
+          <p>
+            Lähdemme yhdessä valokuvausretkelle Kolin upeisiin maisemiin.
+            Päivän aikana harjoittelemme maisemakuvausta ja jaamme vinkkejä sommitteluun.
+            Retki on maksuton jäsenille.
+          </p>
+          <p><strong>Lähtö:</strong> Joensuun matkakeskus klo 9.00<br>
+             <strong>Ilmoittautuminen:</strong> 10.5.2025 mennessä sähköpostitse</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- alasivu -->
+  	<div id="footer"></div>
+    
+    <!-- scriptit -->
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script>
+      const hamburger = document.getElementById('hamburger-menu');
+      
+      hamburger.addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
